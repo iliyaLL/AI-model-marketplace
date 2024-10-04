@@ -9,10 +9,11 @@ body {
 }
 
 .mycontainer {
-    max-width: 600px;
+    width: 100%; /* Ensure it adapts to smaller screens */
+    max-width: 600px; /* Set reduced width */
     margin: 0 auto;
     background-color: white;
-    padding: 100px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
@@ -39,7 +40,7 @@ form {
 }
 
 input, textarea {
-    margin: auto;
+    margin-bottom: 15px;
     padding: 10px;
     font-size: 1rem;
     border-radius: 5px;
@@ -98,4 +99,3 @@ p {
     text-align: center;
     margin-top: 10px;
 }
-

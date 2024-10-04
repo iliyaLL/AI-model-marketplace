@@ -1,9 +1,9 @@
-const response = await fetch('./build/contracts/AiModelMarketplace.json');
+const response = await fetch('./build/contracts/AIModelMarketplace.json');
 const configuration = await response.json();
 const CONTRACT_ABI = configuration.abi;
 const CONTRACT_ADDRESS = configuration.networks[5777].address;
 
-console.log(CONTRACT_ADDRESS);
+console.log(CONTRACT_ADDRESS, CONTRACT_ABI);
 
 let contract;
 let web3;
